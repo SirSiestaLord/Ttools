@@ -9,6 +9,42 @@ using System.Text.RegularExpressions;
 using System.Collections.Generic;
 namespace Ttools
 {
+    public class ObjectFuncs{
+        public int i,i2;
+        public string s,s2;
+        public float f,f2;
+        
+        public ObjectFuncs(int i)
+        {
+            this.i = i;
+        }
+        public ObjectFuncs(float f)
+        {
+            this.f= f;
+        }
+        public ObjectFuncs(string s)
+        {
+            this.s = s;
+        }
+
+        public ObjectFuncs(string s,string s2)
+        {
+            this.s = s;
+            this.s2 = s2;
+        }
+        public ObjectFuncs(int i,int i2)
+        {
+            this.i = i;
+            this.i2 = i2;
+        }
+        public ObjectFuncs(float f, float f2)
+        {
+            this.f = f;
+            this.f2 = f2;
+        }
+
+    }
+
     public class MainFuncs
     {
         public void WriteLine(String a)
