@@ -100,7 +100,18 @@ namespace Ttools
         {
             Console.Write(a);
         }
-        public void AutomaticLinkOpener()
+        public void OpenLink()
+        {
+            Console.WriteLine("Link:");
+            string link = Console.ReadLine();
+            Process process = new Process();
+            process.StartInfo.UseShellExecute = true;
+            process.StartInfo.FileName = "chrome";
+            process.StartInfo.Arguments = link;
+            process.StartInfo.CreateNoWindow = true;
+            process.Start();
+        }
+        public void AutomaticRepeatedLinkOpener()
         {
             string[] links = new string[100];
             float[] times = new float[100];
